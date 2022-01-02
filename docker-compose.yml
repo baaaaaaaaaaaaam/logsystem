@@ -68,7 +68,9 @@ services:
     build:
       context: ./app
     volumes:
-      - log-data:/app/logs
+      - type: volume
+        source: log-data
+        target: /app/logs
     ports:
       - "3000:3000"
 
@@ -76,7 +78,13 @@ services:
     build:
       context: ./filebeat
     volumes:
-      - log-data:/var/log/server
+      - type: bind
+        source: ./filebeat/filebeat.yml
+        target: /usr/share/filebeat/filebeat.yml
+        read_only: true
+      - type: volume
+        source: log-data
+        target: /var/log/server
     networks:
       - elk
     depends_on:
