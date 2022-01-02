@@ -4,4 +4,4 @@ FROM docker.elastic.co/beats/filebeat:7.4.2
 USER root
 
 RUN mkdir /var/log/server
-RUN chown -R root /usr/share/filebeat
+# RUN chown -R root /usr/share/filebeat

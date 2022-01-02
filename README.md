@@ -12,15 +12,6 @@
 
 * 마지막으로 kibana에서는 검색가능하게 된 log를 시각화해 줌으로 써 log파일을 일일이 다운받아 찾아볼 필요가 없어진다.
 
-------------
-
-## 실행 방법
-
-1. git clone https://github.com/baaaaaaaaaaaaam/logsystem.git
-2. docker-compose up -d
-3. 패스워드 변경 (docker-compose exec -T elasticsearch bin/elasticsearch-setup-passwords auto --batch)
-4. docker-compose restart kibana logstash
-
 
 ------------
 
@@ -32,3 +23,4 @@
 
 * 내가 작성한 글: <https://programmerk.tistory.com/58>
 
+* 실행 방법 글 :  <https://programmerk.tistory.com/59>

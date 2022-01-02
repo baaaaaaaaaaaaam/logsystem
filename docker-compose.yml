@@ -81,7 +81,7 @@ services:
       - type: bind
         source: ./filebeat/filebeat.yml
         target: /usr/share/filebeat/filebeat.yml
-        read_only: true
+        
       - type: volume
         source: log-data
         target: /var/log/server
