@@ -24,3 +24,5 @@
 * 내가 작성한 글: <https://programmerk.tistory.com/58>
 
 * 실행 방법 글 :  <https://programmerk.tistory.com/59>
+
+* docker-compose build 에서 각 docker image로 만들어서 사용하는 방법 <https://programmerk.tistory.com/60>
